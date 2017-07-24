@@ -1,4 +1,9 @@
-﻿
+﻿/*
+ * Name : Gursharan Singh
+ * Date : 23 July, 2017
+ * Description : This is the sub class of abstract class
+ * Version: 0.1 Created  Giant Planet class
+ */
 namespace Planet_Assignmnet
 {
     /// <summary>
