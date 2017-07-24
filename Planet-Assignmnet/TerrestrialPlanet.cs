@@ -2,7 +2,7 @@
  * Name : Gursharan Singh
  * Date : 24 July, 2017
  * Description : This is the sub class of abstract class
- * Version: 0.1 Created Terrestrial Planet Class
+ * Version: 0.2 Added HasMoons and Habitable methods to implement the interfaces
  */
 namespace Planet_Assignmnet
 {
@@ -42,8 +42,8 @@ namespace Planet_Assignmnet
             return false;
         }
         /// <summary>
-        /// This is the HasMoons method which has no parameters
-        /// It checks whether the moon count is greater than zero or not.
+        /// This is the Habitable method which has no parameters
+        /// It checks whether the instance variable oxygen is set to true .
         /// </summary>
         /// <returns></returns>
         public bool Habitable()
