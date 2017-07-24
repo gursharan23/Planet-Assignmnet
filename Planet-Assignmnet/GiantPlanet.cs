@@ -2,7 +2,7 @@
  * Name : Gursharan Singh
  * Date : 23 July, 2017
  * Description : This is the sub class of abstract class
- * Version: 0.2 Added HasMoons Method
+ * Version: 0.3 Added HasRings Method
  */
 namespace Planet_Assignmnet
 {
@@ -10,7 +10,7 @@ namespace Planet_Assignmnet
     /// This is the sub class called Giant Planet
     /// </summary>
     public class GiantPlanet:Planet,IHasMoons
-    {
+    {    
         //Private instance variables
         private string _type;
         //Constructor
@@ -26,11 +26,10 @@ namespace Planet_Assignmnet
         {
             this._type = type;
         }
-        //Private Methods
         //Public Methods
         /// <summary>
-        /// This is the HasMoons mrhod which has no parameters
-        /// It checks whether the moon count is greater than zero or not
+        /// This is the HasMoons method which has no parameters
+        /// It checks whether the moon count is greater than zero or not.
         /// </summary>
          public bool HasMoons()
         {
@@ -39,6 +38,20 @@ namespace Planet_Assignmnet
                 return true;
             }
             return false;
+        }
+
+        /// <summary>
+        /// This is the HasRings method which has no parameters
+        /// It checks whether the ring count is greater than zero or not.
+        /// </summary>
+        /// <returns></returns>
+        public bool HasRings()
+        {
+            if (RingCount>0)
+            {
+                return true;
+            }
+             return false;
         }
     }
 }
