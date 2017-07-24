@@ -9,7 +9,7 @@ namespace Planet_Assignmnet
     /// <summary>
     /// This is the sub class called Terrestrial Planet
     /// </summary>
-    public class TerrestrialPlanet:Planet
+    public class TerrestrialPlanet:Planet,IHasMoons,IHabitable
     {
         //Private Instance Variables
         private bool _oxygen;
@@ -27,8 +27,33 @@ namespace Planet_Assignmnet
         {
             this._oxygen = oxygen;
         }
-        
-    
-        
+        //Public methods
+        /// <summary>
+        /// This is the HasMoons method which has no parameters
+        /// It checks whether the moon count is greater than zero or not.
+        /// </summary>
+        /// <returns></returns>
+        public bool HasMoons()
+        {
+            if (MoonCount>0)
+            {
+                return true;
+            }
+            return false;
+        }
+        /// <summary>
+        /// This is the HasMoons method which has no parameters
+        /// It checks whether the moon count is greater than zero or not.
+        /// </summary>
+        /// <returns></returns>
+        public bool Habitable()
+        {
+            if (this._oxygen)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }

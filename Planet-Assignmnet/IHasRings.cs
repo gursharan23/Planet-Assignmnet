@@ -7,7 +7,7 @@
 namespace Planet_Assignmnet
 {
     /// <summary>
-    /// This is the IHasRings 
+    /// This is the IHasRings interface
     /// </summary>
     public interface IHasRings
     {
