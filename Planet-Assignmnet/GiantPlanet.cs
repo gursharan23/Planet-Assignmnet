@@ -2,7 +2,7 @@
  * Name : Gursharan Singh
  * Date : 23 July, 2017
  * Description : This is the sub class of abstract class
- * Version: 0.1 Created  Giant Planet class
+ * Version: 0.2 Added HasMoons Method
  */
 namespace Planet_Assignmnet
 {
