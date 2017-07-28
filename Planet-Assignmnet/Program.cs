@@ -3,9 +3,9 @@ using System.Collections.Generic;
 /*
  * Name : Gursharan Singh
  * Student Number : 300931676
- * Date : 23 July, 2017
+ * Date : 28 July, 2017
  * Description : This is the main driver class
- * Version: 0.4 Tested all the methods of GiantPlanet and TerrestrialPlanet class
+ * Version: 0.5 Refactored the program class
  */
 namespace Planet_Assignmnet
 {
@@ -57,7 +57,6 @@ namespace Planet_Assignmnet
         {
             Console.WriteLine("Press any key to exit");
             Console.ReadLine();
-            Environment.Exit(0);
         }
     }
 }
