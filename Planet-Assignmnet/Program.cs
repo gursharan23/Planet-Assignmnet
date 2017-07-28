@@ -5,7 +5,7 @@ using System.Collections.Generic;
  * Student Number : 300931676
  * Date : 23 July, 2017
  * Description : This is the main driver class
- * Version: 0.2 Added WaitForAnyKey method
+ * Version: 0.3 Refactored program class
  */
 namespace Planet_Assignmnet
 {
@@ -16,8 +16,10 @@ namespace Planet_Assignmnet
     {
         public static void Main(string[] args)
         {
-            GiantPlanet planet=new GiantPlanet("Jupiter",100.25,150,"Ice");
+            GiantPlanet planet=new GiantPlanet("Jupiter",1.3*Math.Pow(10,5),1.898*Math.Pow(10,27),"Gas");
+            TerrestrialPlanet terrestrialPlanet=new TerrestrialPlanet("Earth",1.2*Math.Pow(10,4),5.972*Math.Pow(10,24),true);
             Console.WriteLine(planet.ToString());
+            Console.WriteLine(terrestrialPlanet.ToString());
             WaitForAnyKey();
 
         }
